@@ -623,12 +623,13 @@
       var submitBtnText = submitBtn.text();
       var feedbackEl = form.find('.contact-feedback');
       event.preventDefault();
-      // Feedback to the user
+      // Waiting for the response from the server
+      submitBtn.html('Wait...').addClass('wait').prop('disabled', true);
       submitBtn.removeClass('wait').html('Success').addClass('success');
-      feedbackEl.addClass('success').html('Thank you for your message. It has been sent.').fadeIn(200);
+      feedbackEl.addClass('success').html('Thank you for your message. It has been sent.').fadeIn(1200);
       setTimeout(function() {
         submitBtn.html(submitBtnText).removeClass('success').prop('disabled', false);
-        feedbackEl.fadeOut(200).removeClass('success').html('');
+        feedbackEl.fadeOut(1200).removeClass('success').html('');
       }, 6000);
       // Clears the Form
       form[0].reset();
