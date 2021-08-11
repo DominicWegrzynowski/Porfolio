@@ -14,7 +14,7 @@
  * Sidebar
  * Home
  * About
- * Services
+ * skills
  * Hire
  * Portfolio
  * Testimonials
@@ -831,8 +831,8 @@ hr {
   }
 }
 
-/*----------- Services -----------*/
-.services-area .single-service {
+/*----------- skills -----------*/
+.skills-area .single-skill {
   background-color: #fff;
   border: 1px solid rgba(214, 214, 214, 0.8);
   margin-bottom: 30px;
@@ -841,13 +841,13 @@ hr {
   transition: all 0.15s ease-in-out;
 }
 
-.services-area .single-service .service-icon {
+.skills-area .single-skill .skill-icon {
   display: inline-block;
   font-size: 50px;
   margin-bottom: 22px;
 }
 
-.services-area .single-service .service-title {
+.skills-area .single-skill .skill-title {
   color: #333;
   font-size: 18px;
   font-weight: 700;
@@ -855,7 +855,7 @@ hr {
   margin-bottom: 12px;
 }
 
-.services-area .single-service .service-description {
+.skills-area .single-skill .skill-description {
   margin-bottom: 0;
 }
 
