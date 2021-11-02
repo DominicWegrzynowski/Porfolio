@@ -652,6 +652,10 @@
 
     /*----------- Portfolio -----------*/
 
+    var projectsGridRow = document.getElementById("projects-grid");
+    projectsGridRow.hidden = true; 
+
+
     (function() {
       var grid = $('.portfolio-area .portfolio-grid');
       var filters = $('.portfolio-area .filter-control li');
@@ -663,6 +667,7 @@
         filters.removeClass('tab-active');
         $(this).addClass('tab-active');
         var selector = $(this).data('filter');
+        projectsGridRow.hidden = false; 
         grid.isotope({
           filter: selector,
           transitionDuration: '.25s'
@@ -694,3 +699,5 @@
 
   });
 }(jQuery));
+
+
