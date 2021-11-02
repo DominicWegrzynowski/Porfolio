@@ -195,6 +195,7 @@
       <!-- Portfolio -->
       <section class="single-section portfolio-area" id="portfolio-area">
         <div class="container">
+          <!--Heading-->
           <div class="row">
             <div class="col-12">
               <div class="section-heading">
@@ -205,8 +206,8 @@
               </div>
             </div>
           </div>
+          <!-- Filter nav-->
           <div class="row">
-            <!-- Filter nav-->
             <div class="col-12">
               <ul class="list-inline filter-control" role="group" aria-label="Filter Control">
                 <li class="list-inline-item tab-active" data-filter=".challenges">Challenges</li>
@@ -214,7 +215,7 @@
               </ul>
             </div>
           </div>
-          <!-- Thumbnail list - Row -->
+          <!-- Challenges Thumbnail list - Row -->
           <div class="portfolio-grid row gy-2">
             <!-- Single Item - Challenge: Repay -->
             <div class="single-item col-6 col-lg-4 challenges">
@@ -267,7 +268,24 @@
               </a>
             </div>
           </div>
+
+          <!-- Projects Thumbnail list - Row -->
+          <div class="portfolio-grid row gy-2" id="projects-grid">
+            <!--Single Item - Project: Code Times Coffee | Blog -->
+            <div class="single-item col-6 col-lg-4 projects">
+              <a class="portfolio-item" href="#item-6">
+                <div class="portfolio-wrapper"><img class="img-fluid" alt="Item" src="/img/codetimescoffeelogo.jpg">
+                  <div class="item-content">
+                    <h6 class="content-title">Code Times Coffee | Blog</h6><span class="content-more">More Info</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
+        
+        <!-- CHALLENGES LIGHTBOXES -->
+
         <!-- Single lightbox - Challenge: Zero To 100  -->
         <div class="lightbox-wrapper" id="item-1">
           <div class="f-basis-100">
@@ -415,6 +433,38 @@
           </div>
         </div>
         
+        <!-- PROJECTS LIGHTBOXES -->
+
+        <!-- Single lightbox - Project: Code Times Coffee Blog -->
+        <div class="lightbox-wrapper" id="item-6">
+          <div class="f-basis-100">
+            <div class="lightbox-close" data-modal-close><span class="close-btn"><span class="btn-line"></span></span></div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-5">
+                <div class="lightbox-gallery owl-carousel owl-theme"><img class="img-fluid item-img" alt="Item" src="/img/codetimescoffeelogo.jpg"></div>
+              </div>
+              <div class="col-12 col-lg-7">
+                <div class="lightbox-content">
+                  <h3 class="content-title">Code Times Coffee</h3>
+                  <div class="content-description">
+                    <p>A technology blog web application that I write for weekly. Users can read blogposts centered around web development topics such as C# and .NET, having the ability to register accounts and leave comments on posts. There are three roles: administrator, moderator, and blog user. Administrators are able to create, edit and delete blogs as well as write, edit and delete posts. Moderators can edit and delete comments and blog users can post comments.   </p>
+                  </div>
+                  <ul class="list-inline content-info">
+                    <li class="list-inline-item single-info"><span>Date:</span>
+                      <p>11/1/21</p>
+                    </li>
+                    <li class="list-inline-item single-info"><span>Technologies:</span>
+                      <p> C#, ASP.NET Core MVC, PostgreSQL, JavaScript</p>
+                    </li>
+                  </ul><a class="btn content-btn button-main button-scheme" href="https://www.codetimescoffee.com" target="_blank" role="button">Visit Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
       <!-- Blog -->
       <section class="single-section blog-area alt-bg" id="blog-area">
